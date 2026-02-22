@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Indhu S R | Resume Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* ===== Scroll Animation Canvas ===== */
+    #bgCanvas {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.18;           /* watermark strength */
+      filter: grayscale(100%) contrast(110%);
+      pointer-events: none;
+    }
+
+    /* ===== Layout ===== */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px 120px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    section {
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.03),
+        rgba(255,255,255,0.01)
+      );
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 35px;
+      backdrop-filter: blur(6px);
+    }
+
+    section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+      border-left: 4px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    p {
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      padding: 8px 14px;
+      background: rgba(56,189,248,0.12);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(56,189,248,0.25);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 70px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <h1>INDHU S R</h1>
+    <h2>Electronics & Communication Engineering • Embedded Systems • IoT</h2>
+  </header>
+
+  <!-- PROFILE -->
+  <section>
+    <h3>Profile</h3>
+    <p>
+      Motivated individual with a keen interest in data analysis and embedded
+      systems for IoT applications. Demonstrates strong aptitude for learning
+      and problem-solving, with a commitment to developing expertise in emerging
+      technologies. Specialized in developing IoT and embedded system solutions
+      using Arduino. Proficient in Excel and Power BI for data visualization and
+      actionable business insights.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h3>Contact</h3>
+    <p>📞 <strong>Phone:</strong> 9367751275</p>
+    <p>✉️ <strong>Email:</strong> indhusr04@gmail.com</p>
+    <p>📍 <strong>Location:</strong> Tuticorin, Tamil Nadu</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h3>Skills</h3>
+    <div class="badges">
+      <span class="badge">Python</span>
+      <span class="badge">C Programming</span>
+      <span class="badge">Excel</span>
+      <span class="badge">ADAS CANoe</span>
+      <span class="badge">Embedded & IoT Systems</span>
+      <span class="badge">Communication</span>
+      <span class="badge">Teamwork</span>
+      <span class="badge">Leadership</span>
+    </div>
+  </section>
+
+  <!-- INTERNSHIPS -->
+  <section>
+    <h3>Internships</h3>
+
+    <p><strong>IPCS Global, Tirunelveli</strong> <span class="muted">(Feb 2025)</span></p>
+    <p class="muted">Embedded & IoT Systems</p>
+    <ul>
+      <li>Gained practical knowledge of embedded systems and IoT applications</li>
+      <li>Hands-on experience with Tinkercad for circuit simulation</li>
+      <li>Worked with Blynk IoT platform for cloud monitoring and control</li>
+    </ul>
+
+    <br>
+
+    <p><strong>LIVEWIRE, Tirunelveli</strong> <span class="muted">(July 2025)</span></p>
+    <p class="muted">Advanced Embedded & IoT Application</p>
+    <ul>
+      <li>Designed Arduino-based automation and connectivity solutions</li>
+    </ul>
+
+    <br>
+
+    <p><strong>NoviTech R&D Pvt Ltd</strong> <span class="muted">(July 2025)</span></p>
+    <p class="muted">Data Analytics</p>
+    <ul>
+      <li>Data cleaning, transformation, and visualization using Excel</li>
+      <li>Developed interactive dashboards using Power BI</li>
+    </ul>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h3>Education</h3>
+
+    <p><strong>Bachelor of Engineering (B.E.)</strong></p>
+    <p class="muted">Electronics & Communication Engineering</p>
+    <p class="muted">Government College of Engineering, Tirunelveli (2022 – 2026)</p>
+    <p>CGPA: <strong>8.15 / 10</strong></p>
+
+    <br>
+
+    <p><strong>Higher Secondary Education (Class XII)</strong></p>
+    <p class="muted">State Board, Tamil Nadu (2021 – 2022)</p>
+    <p>Percentage: <strong>94.3%</strong></p>
+
+    <br>
+
+    <p><strong>Secondary Education (Class X)</strong></p>
+    <p class="muted">State Board, Tamil Nadu (2020)</p>
+    <p>Percentage: <strong>93.8%</strong></p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h3>Projects</h3>
+    <ul>
+      <li>Smart Door Lock System using Arduino</li>
+      <li>Fire Detection based on Image Processing</li>
+      <li>Smart Toll Gate System using Arduino</li>
+    </ul>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section>
+    <h3>Languages</h3>
+    <div class="badges">
+      <span class="badge">English</span>
+      <span class="badge">Tamil</span>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Indhu S R • Resume Portfolio
+  </footer>
+
+</div>
+
+<script>
+  const canvas = document.getElementById("bgCanvas");
+  const ctx = canvas.getContext("2d");
+
+  const frameCount = 240;
+  const images = [];
+  let loaded = 0;
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  window.addEventListener("resize", resize);
+  resize();
+
+  for (let i = 1; i <= frameCount; i++) {
+    const img = new Image();
+    img.src = `frames/ezgif-frame-${String(i).padStart(3, "0")}.jpg`;
+    img.onload = () => loaded++;
+    images.push(img);
+  }
+
+  function render() {
+    if (loaded < frameCount) return;
+
+    const scrollTop = document.documentElement.scrollTop;
+    const maxScroll =
+      document.documentElement.scrollHeight - window.innerHeight;
+
+    const frameIndex = Math.min(
+      frameCount - 1,
+      Math.floor((scrollTop / maxScroll) * frameCount)
+    );
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(images[frameIndex], 0, 0, canvas.width, canvas.height);
+  }
+
+  window.addEventListener("scroll", () => {
+    requestAnimationFrame(render);
+  });
+</script>
+
+</body>
+</html>
